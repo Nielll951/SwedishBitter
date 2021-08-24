@@ -188,3 +188,34 @@ body {
    top: 25px;
    right: 60px;
 }
+
+.advantages {
+   margin-bottom: 200px;
+}
+
+.advantages__inner {
+   display: flex;
+   justify-content: space-around;
+}
+
+.advantages__item {
+   width: 240px;
+   padding-left: 40px;
+   padding-top: 35px;
+   position: relative;
+}
+
+.advantages__item::before {
+   content: '';
+   position: absolute;
+   width: 25px;
+   height: 25px;
+   top: 0;
+   left: 0;
+   border: 5px solid rgba(126, 178, 82, .3);
+   border-radius: 50%;
+}
+
+.advantages__item-number {}
+
+.advantages__item-text {}
