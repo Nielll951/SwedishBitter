@@ -9,11 +9,17 @@ body {
    font-weight: 400;
    font-size: 16px;
    line-height: 24px;
+   color: #303030;
 }
 
 .container {
    max-width: 1200px;
    padding: 0px 15px;
+   margin: 0 auto;
+}
+
+.container-fluid {
+   max-width: 1720px;
    margin: 0 auto;
 }
 
@@ -135,7 +141,6 @@ body {
 }
 
 .top-form__title {
-   color: #303030;
    font-size: 14px;
    line-height: 22px;
    letter-spacing: 1px;
@@ -169,6 +174,9 @@ body {
    position: absolute;
    right: 0;
    bottom: 0;
+}
+
+.form__btn {
    padding: 22px 110px 22px 70px;
    border: none;
    outline: none;
@@ -179,9 +187,10 @@ body {
    background-color: #7eb252;
    text-transform: uppercase;
    cursor: pointer;
+   position: relative;
 }
 
-.top-form button:after {
+.form__btn:after {
    content: '';
    background-image: url(../images/arrow-right.png);
    position: absolute;
@@ -241,7 +250,6 @@ body {
 
 .list__title {
    font-weight: 700;
-   color: #303030;
    font-size: 40px;
    line-height: 50px;
    max-width: 470px;
@@ -264,7 +272,6 @@ body {
    font-weight: 600;
    font-size: 14px;
    line-height: 20px;
-   color: #303030;
    padding: 20px 0;
    border-bottom: 1px solid #e6efde;
    text-transform: uppercase;
@@ -415,10 +422,6 @@ body {
    padding: 30px 50px 30px 40px;
 }
 
-.tabs__reviews-text {
-   color: #303030;
-}
-
 .tabs__reviews-link {
    color: #7eb152;
    padding-bottom: 1px;
@@ -487,7 +490,6 @@ body {
 .popularity__box-text {
    border: 1px solid #c5dab5;
    padding: 30px;
-   color: #303030;
 }
 
 .popularity__box-link {
@@ -525,12 +527,10 @@ body {
    font-size: 40px;
    line-height: 50px;
    font-weight: 700;
-   color: #303030;
    margin-top: 50px;
 }
 
 .popularity__right-subtitle {
-   color: #303030;
    padding: 50px 0;
    font-weight: 700;
    font-size: 14px;
@@ -558,4 +558,81 @@ body {
    background-image: url(../images/chevron.svg);
    top: 50%;
    transform: translateY(-50%);
+}
+
+.history {
+   margin-top: 270px;
+   margin-bottom: 200px;
+}
+
+.history__wrapper {
+   background-image: url(../images/alonso.jpg);
+   background-repeat: no-repeat;
+   background-position: right center;
+   min-height: 920px;
+}
+
+.history__inner {}
+
+.history__title {
+   padding: 80px 0px 40px;
+   font-size: 40px;
+   line-height: 50px;
+   font-weight: 700;
+   max-width: 570px;
+}
+
+.history__text {
+   background-color: #f6f9f3;
+   padding: 35px 30px 60px;
+   max-width: 700px;
+   position: relative;
+}
+
+.history__text::before {
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 275px;
+   background-color: #f6f9f3;
+   right: 100%;
+   top: 0;
+}
+
+.history__text p {
+   margin: 15px 0;
+}
+
+.history__form {
+   max-width: 400px;
+   padding-left: 30px;
+   margin-left: 200px;
+}
+
+.history__form-title {
+   margin: 35px 0px 20px;
+   font-size: 14px;
+   line-height: 22px;
+   font-weight: 700;
+   padding-right: 30px;
+   text-transform: uppercase;
+}
+
+.history__form input {
+   border: none;
+   outline: none;
+   height: 34px;
+   border-bottom: 1px solid #cddcbc;
+   display: block;
+   width: 100%;
+   font-size: 14px;
+}
+
+.history__form input::placeholder {
+   color: #a8c48c;
+}
+
+.history__form button {
+   width: 100%;
+   margin-top: 30px;
 }
