@@ -7,6 +7,8 @@
 body {
    font-family: 'Montserrat', sans-serif;
    font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
 }
 
 .container {
@@ -257,6 +259,8 @@ body {
 }
 
 .tab {
+   display: flex;
+   align-items: center;
    font-weight: 600;
    font-size: 14px;
    line-height: 20px;
@@ -265,6 +269,7 @@ body {
    border-bottom: 1px solid #e6efde;
    text-transform: uppercase;
    cursor: pointer;
+   padding: 24px 40px 24px 0;
 }
 
 .tab span {
@@ -272,9 +277,21 @@ body {
    margin-right: 18px;
 }
 
-.active {}
+.tab.active {
+   position: relative;
+}
 
-.tabs__box {}
+.tab.active::after {
+   content: '';
+   position: absolute;
+   right: 25px;
+   top: 40%;
+   background-image: url(../images/chevron.svg);
+   width: 8px;
+   height: 13px;
+}
+
+.active {}
 
 .tabs__content {
    min-width: 500px;
@@ -284,6 +301,7 @@ body {
    background-size: cover;
    background-position: top center;
    position: relative;
+   margin-top: -170px;
 }
 
 .tab-item {
@@ -319,4 +337,125 @@ body {
    top: 135px;
 }
 
+.item-4 {
+   left: 227px;
+   top: 210px;
+}
+
+.item-5 {
+   left: 227px;
+   top: 15px;
+}
+
+.item-6 {
+   left: 259px;
+   top: 350px;
+}
+
+.item-7 {
+   left: 229px;
+   top: 15px;
+}
+
+.item-8 {
+   left: 227px;
+   top: 210px;
+}
+
+.item-9 {
+   left: 229px;
+   top: 25px;
+}
+
 .active-tab {}
+
+.tabs__box {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.tabs__box .tab {
+   font-size: 16px;
+   font-weight: 400;
+   width: 50%;
+   text-transform: none;
+   display: flex;
+   align-items: center;
+}
+
+.tabs__box .tab span {
+   font-size: 12px;
+}
+
+.tabs__box .tab:first-child,
+.tabs__box .tab:nth-child(3) {
+   border-right: 1px solid #e6efde;
+   padding-right: 25px;
+}
+
+.tabs__box .tab:last-child,
+.tabs__box .tab:nth-child(2) {
+   padding-left: 25px;
+}
+
+.tabs__box .tab.active::after {
+   display: none;
+}
+
+.tabs__reviews {
+   padding: 20px;
+   background-color: #f6f9f3;
+   max-width: 430px;
+   position: absolute;
+   bottom: 0;
+}
+
+.tabs__reviews-inner {
+   border: 1px solid #c5dab5;
+   padding: 30px 50px 30px 40px;
+}
+
+.tabs__reviews-text {
+   color: #303030;
+}
+
+.tabs__reviews-link {
+   color: #7eb152;
+   padding-bottom: 1px;
+   font-weight: 600;
+   padding: 0px 8px;
+   position: absolute;
+   bottom: 10px;
+   background-color: #f6f9f3;
+}
+
+.list__link {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 20px;
+}
+
+.list__link a {
+   padding: 22px 100px 22px 120px;
+   outline: none;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   background-color: #7eb252;
+   text-transform: uppercase;
+   cursor: pointer;
+   text-decoration: none;
+   min-width: 500px;
+   position: relative;
+}
+
+.list__link a:after {
+   content: '';
+   background-image: url(../images/arrow-right.png);
+   position: absolute;
+   width: 31px;
+   height: 9px;
+   top: 30px;
+   right: 100px;
+}
