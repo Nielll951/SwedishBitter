@@ -216,6 +216,21 @@ body {
    border-radius: 50%;
 }
 
-.advantages__item-number {}
+.advantages__item-number {
+   color: #a4c58c;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 24px;
+   border-bottom: 3px solid #a4c58c;
+   display: inline-block;
+}
 
-.advantages__item-text {}
+.advantages__item-number span {
+   font-size: 30px;
+}
+
+.advantages__item-text {
+   padding-top: 20px;
+   font-size: 16px;
+   line-height: 24px;
+}
