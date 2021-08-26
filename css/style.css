@@ -21,6 +21,7 @@ body {
 .container-fluid {
    max-width: 1720px;
    margin: 0 auto;
+   overflow: hidden;
 }
 
 .header {}
@@ -259,6 +260,27 @@ body {
 .list__inner {
    display: flex;
    justify-content: space-between;
+   background-color: #f6f9f3;
+   position: relative;
+   padding-bottom: 30px;
+}
+
+.list__inner::before,
+.list__inner::after {
+   content: '';
+   position: absolute;
+   height: 100%;
+   top: 0;
+   width: 100%;
+   background-color: #f6f9f3;
+}
+
+.list__inner::before {
+   right: 100%;
+}
+
+.list__inner::after {
+   left: 100%;
 }
 
 .tabs {
@@ -415,6 +437,7 @@ body {
    max-width: 430px;
    position: absolute;
    bottom: 0;
+   padding-bottom: 0;
 }
 
 .tabs__reviews-inner {
@@ -428,7 +451,7 @@ body {
    font-weight: 600;
    padding: 0px 8px;
    position: absolute;
-   bottom: 10px;
+   bottom: -4px;
    background-color: #f6f9f3;
 }
 
@@ -593,7 +616,7 @@ body {
    content: '';
    position: absolute;
    height: 100%;
-   width: 275px;
+   width: 100%;
    background-color: #f6f9f3;
    right: 100%;
    top: 0;
