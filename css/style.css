@@ -1104,4 +1104,19 @@ body {
 .reviews__link {
    display: flex;
    justify-content: flex-end;
+   align-items: center;
+}
+
+.reviews__link-popup {
+   position: relative;
+}
+
+.reviews__link-tab {
+   margin-right: 80px;
+   color: #7fb252;
+   font-size: 14px;
+   text-decoration: none;
+   border-bottom: 1px solid #7fb252;
+   line-height: 14px;
+   font-weight: 700;
 }
