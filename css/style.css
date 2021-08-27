@@ -1120,3 +1120,55 @@ body {
    line-height: 14px;
    font-weight: 700;
 }
+
+.build {
+   margin-top: 200px;
+}
+
+.build__wrapper {
+   padding: 60px 55px;
+   background-image: url(../images/build.jpg);
+   background-position: left center;
+   background-repeat: no-repeat;
+   min-height: 700px;
+}
+
+.container {}
+
+.build__content {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.build__inner {
+   padding: 20px;
+   max-width: 685px;
+}
+
+.build__inner-box {
+   border: 1px solid #c8dcba;
+   padding: 60px 45px 70px 70px;
+   background-color: #fff;
+}
+
+.build__title {
+   font-size: 40px;
+   line-height: 50px;
+   margin-bottom: 40px;
+   font-weight: 700;
+}
+
+.build__text p {
+   margin: 10px 0;
+}
+
+.build__text span {
+   margin: 50px 0;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 20px;
+   text-transform: uppercase;
+   display: inline-block;
+}
+
+.build__link {}
