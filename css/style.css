@@ -517,7 +517,8 @@ body {
 
 .popularity__box-link,
 .composition__link-btn,
-.reviews__link-popup {
+.reviews__link-popup,
+.build__link {
    padding: 22px 85px 22px 27px;
    outline: none;
    color: #fff;
@@ -533,7 +534,8 @@ body {
 
 .composition__link-btn::after,
 .popularity__box-link::after,
-.reviews__link-popup::after {
+.reviews__link-popup::after,
+.build__link::after {
    content: '';
    background-image: url(../images/arrow-right.png);
    position: absolute;
@@ -1163,7 +1165,7 @@ body {
 }
 
 .build__text span {
-   margin: 50px 0;
+   margin: 40px 0 50px;
    font-weight: 700;
    font-size: 14px;
    line-height: 20px;
@@ -1171,4 +1173,10 @@ body {
    display: inline-block;
 }
 
-.build__link {}
+.build__link {
+   position: relative;
+}
+
+.build__link::after {
+   top: 27px;
+}
