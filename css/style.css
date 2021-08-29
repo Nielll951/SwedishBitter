@@ -127,6 +127,7 @@ body {
 .top__inner-title {
    margin-bottom: 40px;
    font-size: 60px;
+   line-height: 60px;
    font-weight: 600;
    color: #fff;
 }
@@ -530,7 +531,8 @@ body {
 .composition__link-btn,
 .reviews__link-popup,
 .build__link,
-.certificate__link {
+.certificate__link,
+.mobile__link-btn {
    padding: 22px 85px 22px 27px;
    outline: none;
    color: #fff;
@@ -556,6 +558,13 @@ body {
    height: 9px;
    top: 30px;
    right: 40px;
+}
+
+.mobile__link-btn {
+   display: none;
+   width: 100%;
+   text-align: center;
+   padding: 22px 15px;
 }
 
 .popularity__right {
