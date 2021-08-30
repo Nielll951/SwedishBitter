@@ -14,7 +14,84 @@
    .top__inner-img {
       margin-left: 0;
    }
+
+   .advantages {
+      margin-bottom: 130px;
+   }
 }
+
+@media (max-width: 1000px) {
+   .list__inner {
+      display: block;
+      padding-bottom: 20px;
+   }
+
+   .tabs__content {
+      margin: 0 auto;
+      max-width: 500px;
+   }
+
+   .tabs__reviews {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+   }
+
+   .tabs__content::before,
+   .tabs__content::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #a4c58c;
+      z-index: 1;
+   }
+
+   .tabs__content::before {
+      right: 100%;
+   }
+
+   .tabs__content::after {
+      left: 100%;
+   }
+
+   .list__link {
+      justify-content: center;
+   }
+
+   .list__link a {
+      padding: 22px 36px 22px 73px;
+      min-width: 430px;
+   }
+
+   .list__link a::after {
+      right: 85px;
+   }
+
+   .tabs__reviews-link {
+      left: 142px;
+   }
+
+   .tabs__reviews::after,
+   .tabs__reviews::before {
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      height: 20px;
+      bottom: -20px;
+      z-index: 2;
+   }
+
+   .tabs__reviews::before {
+      right: 100%;
+   }
+
+   .tabs__reviews::after {
+      left: 100%;
+   }
+}
+
 
 @media (max-width: 940px) {
    .top__inner-form {
@@ -60,6 +137,10 @@
       margin-bottom: 50px;
    }
 
+   .advantages {
+      margin-bottom: 100px;
+   }
+
    .advantages__inner {
       padding-top: 10px;
       padding-left: 80px;
@@ -68,6 +149,15 @@
 
    .advantages__item {
       padding-right: 60px;
+   }
+
+   .list__title {
+      padding-top: 0;
+      text-align: center;
+      max-width: 370px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 auto 30px;
    }
 }
 
@@ -151,6 +241,90 @@
    .advantages__item {
       width: 100%;
    }
+
+   .tabs__box {
+      flex-direction: column;
+   }
+
+   .tabs__box .tab:first-child,
+   .tabs__box .tab:nth-child(3) {
+      border-right: none;
+      padding-right: 0;
+   }
+
+   .tabs__box .tab:last-child,
+   .tabs__box .tab:nth-child(2) {
+      padding-left: 0;
+   }
+
+   .tabs__box .tab {
+      width: 100%;
+   }
+
+   .tab-order-0 {
+      order: 1;
+   }
+
+   .tab-order-1 {
+      order: 3;
+   }
+
+   .tab-order-2 {
+      order: 2;
+   }
+
+   .tab-order-3 {
+      order: 3;
+   }
+}
+
+@media (max-width: 550px) {
+   .tabs__content {
+      height: 153px;
+      background-image: none;
+      min-width: 0;
+   }
+
+   .tabs__content::after,
+   .tabs__content::before {
+      display: none;
+   }
+
+   .tab-order-3 {
+      border-bottom: none;
+   }
+
+   .tabs__reviews {
+      /* position: static;
+      margin: 0; */
+      display: none;
+   }
+
+   .tab.active::after {
+      display: none;
+   }
+
+   .tabs__reviews-link {
+      bottom: -11px;
+   }
+
+   .tabs__reviews::before {
+      right: 106%;
+   }
+
+   .tabs__reviews::after {
+      left: 105%;
+   }
+
+   .tabs__reviews-mobile {
+      display: flex;
+      justify-content: center;
+      border: 1px solid #c5dab5;
+   }
+
+   .tabs__content {
+      height: 125px;
+   }
 }
 
 
@@ -169,6 +343,53 @@
 
    .header__logo img {
       width: 110px;
+   }
+
+   .list__title {
+      font-size: 24px;
+      line-height: 30px;
+   }
+
+   .tab {
+      font-size: 12px;
+      padding: 24px 0px;
+   }
+
+   .tabs__reviews-text {
+      font-size: 14px;
+   }
+
+   .tabs__reviews {
+      padding: 0;
+   }
+
+   .tabs__reviews-inner {
+      padding: 30px 20px;
+      /* width: 300px; */
+      width: 283px;
+   }
+
+   .tab-item {
+      display: none;
+   }
+
+   .tab-item:first-child {
+      display: none;
+   }
+
+   .tabs {
+      padding-right: 0;
+   }
+
+   .tabs__reviews-link {
+      bottom: -15px;
+      left: 68px;
+   }
+}
+
+@media (max-width: 430px) {
+   .list__link a {
+      margin-top: 0;
    }
 }
 
@@ -200,5 +421,21 @@
 
    .advantages__item {
       margin-bottom: 40px;
+   }
+
+   .container {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .list__link a {
+      margin-top: 0;
+      padding: 22px 10px;
+      min-width: 430px;
+      text-align: center;
+   }
+
+   .list__link a::after {
+      display: none;
    }
 }
