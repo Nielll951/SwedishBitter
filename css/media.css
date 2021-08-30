@@ -1,3 +1,57 @@
+@media (max-width: 1640px) {
+   .popularity__right {
+      background-color: #fff;
+      padding-left: 15px;
+      padding-right: 0;
+   }
+}
+
+@media (max-width: 1400px) {
+   .popularity__wrapper {
+      background-size: 750px;
+   }
+}
+
+@media (max-width: 1230px) {
+   .popularity__wrapper {
+      background-image: none;
+   }
+
+   .popularity__inner {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .popularity__right {
+      padding-left: 0;
+      max-width: 800px;
+      order: 0;
+   }
+
+   .mobile-bg {
+      display: block;
+      background-image: url(../images/popularity.jpg);
+      background-repeat: no-repeat;
+      min-height: 645px;
+      background-size: cover;
+   }
+
+   .popularity {
+      position: relative;
+      margin-top: 50px;
+   }
+
+   .popularity__box {
+      order: 1;
+      max-width: 600px;
+      position: absolute;
+      z-index: 5;
+      bottom: -110px;
+   }
+}
+
+
 @media (max-width: 1120px) {
    .advantages__inner {
       flex-wrap: wrap;
@@ -159,6 +213,24 @@
       line-height: 40px;
       margin: 0 auto 30px;
    }
+
+   .popularity__box {
+      bottom: -10px;
+   }
+
+   .popularity__right {
+      max-width: 540px;
+   }
+
+   .popularity__right-title {
+      text-align: center;
+      font-size: 30px;
+      line-height: 40px;
+   }
+
+   .popularity__right-subtitle {
+      text-align: center;
+   }
 }
 
 @media (max-width: 760px) {
@@ -227,6 +299,22 @@
       padding-top: 10px;
    }
 
+   .popularity__box-link {
+      max-width: 600px;
+      padding: 22px 10px 22px 10px;
+      text-align: center;
+      width: 100%;
+      position: static;
+      display: block;
+   }
+
+   .popularity__box-link::after {
+      display: none;
+   }
+
+   .mobile-bg {
+      background-position-x: center;
+   }
 }
 
 @media (max-width: 600px) {
@@ -384,6 +472,33 @@
    .tabs__reviews-link {
       bottom: -15px;
       left: 68px;
+   }
+
+   .popularity__right-title {
+      font-size: 24px;
+      line-height: 30px;
+   }
+
+   .popularity__box {
+      bottom: -253px;
+      padding: 0;
+   }
+
+   .popularity__box-text {
+      text-align: center;
+      border: none;
+   }
+
+   .popularity__right-list li {
+      margin-bottom: 15px;
+   }
+
+   .popularity__wrapper {
+      min-height: 0px;
+   }
+
+   .mobile-bg {
+      min-height: 245px;
    }
 }
 

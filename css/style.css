@@ -76,6 +76,10 @@ body {
    margin-bottom: 75px;
 }
 
+.mobile-bg {
+   display: none;
+}
+
 .footer__link {
    text-decoration: underline;
    color: #9a9a9a;
