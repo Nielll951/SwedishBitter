@@ -116,6 +116,25 @@
       min-height: 0;
       background-image: none;
    }
+
+   .composition__row {
+      justify-content: space-around;
+   }
+
+   .composition__box {
+      max-width: 100%;
+      order: 0;
+   }
+
+   .composition__item {
+      order: 1;
+   }
+}
+
+@media (max-width: 1144px) {
+   .composition__link {
+      max-width: 620px;
+   }
 }
 
 
@@ -232,7 +251,6 @@
    }
 }
 
-
 @media (max-width: 940px) {
    .top__inner-form {
       position: absolute;
@@ -265,7 +283,12 @@
    .item {
       min-height: 275px;
    }
+}
 
+@media (max-width: 934px) {
+   .composition__link {
+      order: 2;
+   }
 }
 
 @media (max-width: 768px) {
@@ -356,6 +379,47 @@
    .item {
       min-height: 225px;
       max-width: 225px;
+   }
+
+   .composition__box {
+      margin: 0 auto;
+      max-width: 520px;
+      padding-left: 0;
+      padding-right: 0;
+   }
+
+   .composition__title {
+      font-size: 30px;
+      line-height: 40px;
+   }
+
+   .composition__title br {
+      display: none;
+   }
+
+   .composition__item-inner {
+      width: 332px;
+      height: 332px;
+   }
+
+   .composition__link {
+      width: 332px;
+      height: 332px;
+      margin-left: 0;
+      padding: 14px 15px 84px 16px;
+   }
+
+   .composition__link-text {
+      padding-left: 0;
+   }
+
+   .composition__link-text::before {
+      display: none;
+   }
+
+   .composition__link-btn {
+      left: 0;
+      padding: 22px 79px 22px 62px;
    }
 }
 
@@ -776,5 +840,44 @@
    .items__title {
       font-size: 24px;
       line-height: 30px;
+   }
+
+   .composition {
+      padding: 115px 0px 100px;
+   }
+
+   .composition__title {
+      text-align: center;
+      font-size: 24px;
+      line-height: 30px;
+   }
+
+   .composition__item-inner {
+      width: 300px;
+      height: 300px;
+   }
+
+   .composition__link {
+      width: 300px;
+      height: 100%;
+      border: none;
+      padding: 0;
+   }
+
+   .composition__link-text p {
+      font-size: 14px;
+      line-height: 24px;
+   }
+
+   .composition__link-btn {
+      left: -20px;
+      right: -20px;
+      padding: 22px 10px;
+      text-align: center;
+      bottom: auto;
+   }
+
+   .composition__link-btn::after {
+      display: none;
    }
 }
