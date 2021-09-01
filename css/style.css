@@ -306,10 +306,15 @@ body {
    font-size: 14px;
    line-height: 20px;
    padding: 20px 0;
-   border-bottom: 1px solid #e6efde;
+   border-bottom: 1px solid #eef1ec;
    text-transform: uppercase;
    cursor: pointer;
    padding: 24px 40px 24px 0;
+   transition: all 0.3s ease 0s;
+}
+
+.tab:hover {
+   background-color: #eef1ec;
 }
 
 .tab span {
@@ -541,6 +546,16 @@ body {
    cursor: pointer;
    text-decoration: none;
    position: absolute;
+   transition: all 0.3s ease 0s;
+}
+
+.popularity__box-link:hover,
+.composition__link-btn:hover,
+.reviews__link-popup:hover,
+.build__link:hover,
+.certificate__link:hover,
+.mobile__link-btn:hover {
+   background-color: #7eb252d9;
 }
 
 .composition__link-btn::after,
@@ -1131,7 +1146,7 @@ body {
 }
 
 .build {
-   margin-top: 200px;
+   margin-top: 0px;
 }
 
 .build__wrapper {
